@@ -11,7 +11,12 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: regenerate and show drift
+        run: |
+          python src/generate_rules.py
+          git -c core.pager=cat diff --no-color
       - name: generator drift check
-        run: python src/generate_rules.py --check
+        run: git diff --exit-code --quiet
       - name: test suite
+        if: always()
         run: python -m unittest discover -s tests -v
