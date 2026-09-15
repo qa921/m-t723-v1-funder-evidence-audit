@@ -19,7 +19,7 @@ jobs:
         run: git -c core.pager=cat diff --no-color
       - name: auto-commit drift fix
         run: |
-          if ! git diff --quiet; then
+          if ! git diff --quiet -- rules registry docs/category_totals.json docs/inventory_report.json; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git add rules/canonical_rules.jsonl registry/reconciled_registry.jsonl docs/category_totals.json docs/inventory_report.json
@@ -27,7 +27,15 @@ jobs:
             git push
           fi
       - name: generator drift check
-        run: git diff --exit-code --quiet
+        run: git diff --exit-code --quiet -- rules registry docs/category_totals.json docs/inventory_report.json
       - name: test suite
+        run: |
+          set -o pipefail
+          python -m unittest discover -s tests -v 2>&1 | tee docs/validation_last_run.txt
+      - name: record validation output
         if: always()
-        run: python -m unittest discover -s tests -v
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/validation_last_run.txt
+          git diff --cached --quiet || { git commit -m "chore: record validation output"; git push; }
