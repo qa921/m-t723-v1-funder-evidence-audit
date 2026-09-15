@@ -1,24 +1,24 @@
-{"f": "Aster Health", "cat": "health", "regions": ["US", "CA"], "eligible": "charity (community clinics); no individuals", "status": "reconciled", "provenance": ["L01", "A01", "C01"]}
-{"f": "Beacon Climate", "cat": "climate", "regions": ["Global"], "eligible": "nonprofit, fiscal_sponsor", "status": "reconciled", "provenance": ["L02", "A02", "C02"]}
-{"f": "Cedar Arts", "cat": "arts", "regions": ["US-NE"], "eligible": "public_school, charity (schools: charitable fiscal agent required)", "status": "reconciled", "provenance": ["L03", "A03", "C03"]}
-{"f": "Delta Food", "cat": "food", "regions": ["US"], "eligible": "nonprofit (local partners only for multi-state work)", "status": "reconciled", "provenance": ["L04", "A04", "C04"]}
-{"f": "Ember Justice", "cat": "justice", "regions": ["Global"], "eligible": "nonprofit (litigation and legal advocacy)", "status": "reconciled", "provenance": ["L05", "A05", "C05"]}
-{"f": "Fjord Education", "cat": "education", "regions": ["US-MW"], "eligible": "school_district, nonprofit", "status": "reconciled", "provenance": ["L06", "A06", "C06"]}
-{"f": "Grove Housing", "cat": "housing", "regions": ["US-W"], "eligible": "nonprofit preservation; new construction not funded", "status": "reconciled", "provenance": ["L07", "A07", "C07"]}
-{"f": "Harbor Oceans", "cat": "environment", "regions": ["Global"], "eligible": "nonprofit (coastal priority, not restriction)", "status": "reconciled", "provenance": ["L08", "A08", "C08"]}
-{"f": "Indigo Youth", "cat": "youth", "regions": ["US"], "eligible": "nonprofit; no individual awards, no scholarships", "status": "reconciled", "provenance": ["L09", "A09", "C09"]}
-{"f": "Juniper Rural", "cat": "rural", "regions": ["US-S"], "eligible": "charity, nonprofit, fiscal_sponsor (501c3 preferred, not required)", "status": "reconciled", "provenance": ["L10", "A10", "C10"]}
-{"f": "Kestrel Science", "cat": "science", "regions": ["Global"], "eligible": "university, nonprofit", "status": "reconciled", "provenance": ["L11", "A11", "C11"]}
-{"f": "Lumen Mobility", "cat": "transport", "regions": ["EU"], "eligible": "nonprofit (policy implementation included)", "status": "reconciled", "provenance": ["L12", "A12", "C12"]}
-{"f": "Mesa Water", "cat": "water", "regions": ["US-SW"], "eligible": "nonprofit, fiscal_sponsor (sponsor may apply, not required)", "status": "reconciled", "provenance": ["L13", "A13", "C13"]}
-{"f": "Northstar Equity", "cat": "equity", "regions": ["US"], "eligible": "nonprofit; no direct startup investments", "status": "reconciled", "provenance": ["L14", "A14", "C14"]}
-{"f": "Orchid Culture", "cat": "culture", "regions": ["Global"], "eligible": "nonprofit (digitization is a priority, not a requirement)", "status": "reconciled", "provenance": ["L15", "A15", "C15"]}
-{"f": "Prairie Wellness", "cat": "health", "regions": ["US-Plains"], "eligible": "undetermined", "status": "unresolved", "provenance": ["L16", "A16", "C16"]}
-{"f": "Quarry Workforce", "cat": "workforce", "regions": ["US"], "eligible": "nonprofit (union partnership not required)", "status": "reconciled", "provenance": ["L17", "A17", "C17"]}
-{"f": "River Tech", "cat": "technology", "regions": ["Global"], "eligible": "nonprofit (open-source release encouraged, exceptions need approval)", "status": "reconciled", "provenance": ["L18", "A18", "C18"]}
-{"f": "Solace Refuge", "cat": "humanitarian", "regions": ["MENA"], "eligible": "nonprofit displacement response", "status": "reconciled", "provenance": ["L19", "A19", "C19"]}
-{"f": "Tandem Trees", "cat": "environment", "regions": ["US"], "eligible": "nonprofit urban-forestry maintenance", "status": "reconciled", "provenance": ["L20", "A20", "C20"]}
-{"f": "Umber Heritage", "cat": "culture", "regions": ["US-SE"], "eligible": "charity, nonprofit (capital preservation and stabilization included)", "status": "reconciled", "provenance": ["L21", "A21", "C21"]}
-{"f": "Verdant Agriculture", "cat": "food", "regions": ["Global"], "eligible": "nonprofit (for-profit pilots need nonprofit lead)", "status": "reconciled", "provenance": ["L22", "A22", "C22"]}
-{"f": "Willow Disability", "cat": "disability", "regions": ["US"], "eligible": "nonprofit", "status": "reconciled", "provenance": ["L23", "A23", "C23"]}
-{"f": "Zephyr Disaster", "cat": "humanitarian", "regions": ["APAC"], "eligible": "nonprofit (response funding only after declared emergency)", "status": "reconciled", "provenance": ["L24", "A24", "A24D", "C24"]}
+{"cat": "health", "eligible": "charity", "f": "Aster Health", "provenance": ["L01", "A01", "C01"], "regions": ["US", "CA"], "status": "reconciled"}
+{"cat": "climate", "eligible": "nonprofit, fiscal_sponsor", "f": "Beacon Climate", "provenance": ["L02", "A02", "C02"], "regions": ["Global"], "status": "reconciled"}
+{"cat": "arts", "eligible": "public_school, charity", "f": "Cedar Arts", "provenance": ["L03", "A03", "C03"], "regions": ["US-NE"], "status": "reconciled"}
+{"cat": "food", "eligible": "nonprofit", "f": "Delta Food", "provenance": ["L04", "A04", "C04"], "regions": ["US"], "status": "reconciled"}
+{"cat": "justice", "eligible": "nonprofit", "f": "Ember Justice", "provenance": ["L05", "A05", "C05"], "regions": ["Global"], "status": "reconciled"}
+{"cat": "education", "eligible": "school_district, nonprofit", "f": "Fjord Education", "provenance": ["L06", "A06", "C06"], "regions": ["US-MW"], "status": "reconciled"}
+{"cat": "housing", "eligible": "nonprofit", "f": "Grove Housing", "provenance": ["L07", "A07", "C07"], "regions": ["US-W"], "status": "reconciled"}
+{"cat": "environment", "eligible": "nonprofit", "f": "Harbor Oceans", "provenance": ["L08", "A08", "C08"], "regions": ["Global"], "status": "reconciled"}
+{"cat": "youth", "eligible": "nonprofit", "f": "Indigo Youth", "provenance": ["L09", "A09", "C09"], "regions": ["US"], "status": "reconciled"}
+{"cat": "rural", "eligible": "charity, nonprofit, fiscal_sponsor", "f": "Juniper Rural", "provenance": ["L10", "A10", "C10"], "regions": ["US-S"], "status": "reconciled"}
+{"cat": "science", "eligible": "university, nonprofit", "f": "Kestrel Science", "provenance": ["L11", "A11", "C11"], "regions": ["Global"], "status": "reconciled"}
+{"cat": "transport", "eligible": "nonprofit", "f": "Lumen Mobility", "provenance": ["L12", "A12", "C12"], "regions": ["EU"], "status": "reconciled"}
+{"cat": "water", "eligible": "nonprofit, fiscal_sponsor", "f": "Mesa Water", "provenance": ["L13", "A13", "C13"], "regions": ["US-SW"], "status": "reconciled"}
+{"cat": "equity", "eligible": "nonprofit", "f": "Northstar Equity", "provenance": ["L14", "A14", "C14"], "regions": ["US"], "status": "reconciled"}
+{"cat": "culture", "eligible": "nonprofit", "f": "Orchid Culture", "provenance": ["L15", "A15", "C15"], "regions": ["Global"], "status": "reconciled"}
+{"cat": "health", "eligible": "undetermined", "f": "Prairie Wellness", "provenance": ["L16", "A16", "C16"], "regions": ["US-Plains"], "status": "unresolved"}
+{"cat": "workforce", "eligible": "nonprofit", "f": "Quarry Workforce", "provenance": ["L17", "A17", "C17"], "regions": ["US"], "status": "reconciled"}
+{"cat": "technology", "eligible": "nonprofit", "f": "River Tech", "provenance": ["L18", "A18", "C18"], "regions": ["Global"], "status": "reconciled"}
+{"cat": "humanitarian", "eligible": "nonprofit", "f": "Solace Refuge", "provenance": ["L19", "A19", "C19"], "regions": ["MENA"], "status": "reconciled"}
+{"cat": "environment", "eligible": "nonprofit", "f": "Tandem Trees", "provenance": ["L20", "A20", "C20"], "regions": ["US"], "status": "reconciled"}
+{"cat": "culture", "eligible": "charity, nonprofit", "f": "Umber Heritage", "provenance": ["L21", "A21", "C21"], "regions": ["US-SE"], "status": "reconciled"}
+{"cat": "food", "eligible": "nonprofit", "f": "Verdant Agriculture", "provenance": ["L22", "A22", "C22"], "regions": ["Global"], "status": "reconciled"}
+{"cat": "disability", "eligible": "nonprofit", "f": "Willow Disability", "provenance": ["L23", "A23", "C23"], "regions": ["US"], "status": "reconciled"}
+{"cat": "humanitarian", "eligible": "nonprofit", "f": "Zephyr Disaster", "provenance": ["L24", "A24", "A24D", "C24"], "regions": ["APAC"], "status": "reconciled"}
