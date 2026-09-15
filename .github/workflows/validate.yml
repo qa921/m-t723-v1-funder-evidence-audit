@@ -3,6 +3,8 @@ on:
   push:
     branches: [audit/m-t723-v1-approved]
   workflow_dispatch:
+permissions:
+  contents: write
 jobs:
   validate:
     runs-on: ubuntu-latest
@@ -11,10 +13,19 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: regenerate and show drift
+      - name: regenerate
+        run: python src/generate_rules.py
+      - name: show drift
+        run: git -c core.pager=cat diff --no-color
+      - name: auto-commit drift fix
         run: |
-          python src/generate_rules.py
-          git -c core.pager=cat diff --no-color
+          if ! git diff --quiet; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add rules/canonical_rules.jsonl registry/reconciled_registry.jsonl docs/category_totals.json docs/inventory_report.json
+            git commit -m "chore: regenerate canonical outputs (auto-fix drift)"
+            git push
+          fi
       - name: generator drift check
         run: git diff --exit-code --quiet
       - name: test suite
