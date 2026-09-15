@@ -1,0 +1,28 @@
+{
+  "categories": {
+    "arts": 1,
+    "climate": 1,
+    "culture": 2,
+    "disability": 1,
+    "education": 1,
+    "environment": 2,
+    "equity": 1,
+    "food": 2,
+    "health": 2,
+    "housing": 1,
+    "humanitarian": 2,
+    "justice": 1,
+    "rural": 1,
+    "science": 1,
+    "technology": 1,
+    "transport": 1,
+    "water": 1,
+    "workforce": 1,
+    "youth": 1
+  },
+  "computed_from": "rules/canonical_rules.jsonl",
+  "eligibility_authority_false": 1,
+  "eligibility_authority_true": 23,
+  "total_funders": 24,
+  "total_rules": 24
+}

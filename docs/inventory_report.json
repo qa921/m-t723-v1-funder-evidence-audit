@@ -1,0 +1,51 @@
+{
+  "appendix_duplicate_texts": [
+    "Response funding activates only after a declared emergency."
+  ],
+  "appendix_rows": 25,
+  "categories_from_corpus": [
+    "arts",
+    "climate",
+    "culture",
+    "disability",
+    "education",
+    "environment",
+    "equity",
+    "food",
+    "health",
+    "housing",
+    "humanitarian",
+    "justice",
+    "rural",
+    "science",
+    "technology",
+    "transport",
+    "water",
+    "workforce",
+    "youth"
+  ],
+  "citations": 24,
+  "corpus_rows": 24,
+  "deltas": {
+    "appendix_rows": -1,
+    "citations": -37,
+    "corpus_rows": 1,
+    "funders": 4,
+    "literal_rows": 2
+  },
+  "distinct_funders": 24,
+  "illegible_appendix": [
+    "A16"
+  ],
+  "illegible_literal": [
+    "L16"
+  ],
+  "index_claimed": {
+    "appendix_rows": 26,
+    "citations": 61,
+    "corpus_rows": 23,
+    "funders": 20,
+    "literal_rows": 22
+  },
+  "literal_rows": 24
+}
