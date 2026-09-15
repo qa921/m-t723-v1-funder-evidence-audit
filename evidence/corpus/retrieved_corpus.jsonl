@@ -1,0 +1,24 @@
+{"id":"C01","f":"Aster Health","cat":"health","regions":"US,CA","text":"Supports community clinics; paraphrase says excludes individual applicants."}
+{"id":"C02","f":"Beacon Climate","cat":"climate","regions":"Global","text":"Retrieved summary: climate adaptation grants, likely nonprofits only."}
+{"id":"C03","f":"Cedar Arts","cat":"arts","regions":"US-NE","text":"Arts education; a secondary snippet says schools are ineligible."}
+{"id":"C04","f":"Delta Food","cat":"food","regions":"US","text":"Food security projects; grants may require local partners."}
+{"id":"C05","f":"Ember Justice","cat":"justice","regions":"Global","text":"Civil rights litigation funding; unclear whether advocacy is excluded."}
+{"id":"C06","f":"Fjord Education","cat":"education","regions":"US-MW","text":"STEM teacher programs, summary calls districts eligible."}
+{"id":"C07","f":"Grove Housing","cat":"housing","regions":"US-W","text":"Affordable housing preservation; recovered text says no construction."}
+{"id":"C08","f":"Harbor Oceans","cat":"environment","regions":"Coastal","text":"Marine conservation; source paraphrase says coastal-only."}
+{"id":"C09","f":"Indigo Youth","cat":"youth","regions":"US","text":"Youth development; individual scholarships mentioned ambiguously."}
+{"id":"C10","f":"Juniper Rural","cat":"rural","regions":"US-S","text":"Rural capacity; summary says 501(c)(3) required."}
+{"id":"C11","f":"Kestrel Science","cat":"science","regions":"Global","text":"Open science infrastructure; universities possibly eligible."}
+{"id":"C12","f":"Lumen Mobility","cat":"transport","regions":"EU","text":"Safe mobility pilots; secondary summary says excludes policy."}
+{"id":"C13","f":"Mesa Water","cat":"water","regions":"US-SW","text":"Watershed restoration; grants require a fiscal sponsor per recovered text."}
+{"id":"C14","f":"Northstar Equity","cat":"equity","regions":"US","text":"Economic mobility; startup exclusion appears in a paraphrase."}
+{"id":"C15","f":"Orchid Culture","cat":"culture","regions":"Global","text":"Cultural heritage; digitization preference noted."}
+{"id":"C16","f":"Prairie Wellness","cat":"health","regions":"US-Plains","text":"Mental health access; text extraction is partly garbled."}
+{"id":"C17","f":"Quarry Workforce","cat":"workforce","regions":"US","text":"Worker transition programs; union partners mentioned."}
+{"id":"C18","f":"River Tech","cat":"technology","regions":"Global","text":"Public-interest technology; open-source condition appears."}
+{"id":"C19","f":"Solace Refuge","cat":"humanitarian","regions":"MENA","text":"Displacement response; emergency exception mentioned."}
+{"id":"C20","f":"Tandem Trees","cat":"environment","regions":"US","text":"Urban forestry; maintenance grants described."}
+{"id":"C21","f":"Umber Heritage","cat":"culture","regions":"US-SE","text":"Historic preservation; capital work appears eligible."}
+{"id":"C22","f":"Verdant Agriculture","cat":"food","regions":"Global","text":"Regenerative agriculture; for-profit pilots mentioned without clarity."}
+{"id":"C23","f":"Willow Disability","cat":"disability","regions":"US","text":"Disability justice; accessible design projects."}
+{"id":"C24","f":"Zephyr Disaster","cat":"humanitarian","regions":"APAC","text":"Disaster preparedness; response grants in declared emergencies."}

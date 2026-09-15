@@ -1,2 +1,3 @@
-# m-t723-v1-funder-evidence-audit
-M-T723-V1 synthetic source fixture: multi-source funder evidence, source-index discrepancies, and an approved isolated reconciliation branch.
+# M-T723-V1 funder evidence audit fixture
+
+Synthetic, deliberately inconsistent source material for reconciliation. See `INSTRUCTIONS.md`. Raw evidence is mirrored in Dropbox under `/M-T723-V1-funder-evidence-audit`.

@@ -1,0 +1,1 @@
+{"task":"M-T723-V1","claimed_counts":{"corpus_rows":23,"literal_rows":22,"appendix_rows":26,"citations":61,"funders":20},"notes":"Stale intake index; do not rely on it. Some row IDs are duplicated and one appendix scan is illegible.","sources":["corpus/retrieved_corpus.jsonl","literal/literal_register.jsonl","appendix/appendix_extracts.jsonl"]}

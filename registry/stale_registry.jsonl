@@ -1,0 +1,24 @@
+{"f":"Aster Health","cat":"health","regions":["US"],"eligible":"charities"}
+{"f":"Beacon Climate","cat":"environment","regions":["Global"],"eligible":"nonprofits"}
+{"f":"Cedar Arts","cat":"arts","regions":["US"],"eligible":"arts nonprofits"}
+{"f":"Delta Food","cat":"food","regions":["US"],"eligible":"nonprofits"}
+{"f":"Ember Justice","cat":"justice","regions":["Global"],"eligible":"litigation only"}
+{"f":"Fjord Education","cat":"education","regions":["US-MW"],"eligible":"districts"}
+{"f":"Grove Housing","cat":"housing","regions":["US-W"],"eligible":"preservation"}
+{"f":"Harbor Oceans","cat":"environment","regions":["Coastal"],"eligible":"marine organizations"}
+{"f":"Indigo Youth","cat":"youth","regions":["US"],"eligible":"youth orgs"}
+{"f":"Juniper Rural","cat":"rural","regions":["US-S"],"eligible":"501c3"}
+{"f":"Kestrel Science","cat":"science","regions":["Global"],"eligible":"universities"}
+{"f":"Lumen Mobility","cat":"transport","regions":["EU"],"eligible":"nonprofits"}
+{"f":"Mesa Water","cat":"water","regions":["US-SW"],"eligible":"fiscal sponsor required"}
+{"f":"Northstar Equity","cat":"equity","regions":["US"],"eligible":"no startups"}
+{"f":"Orchid Culture","cat":"culture","regions":["Global"],"eligible":"digitization"}
+{"f":"Prairie Wellness","cat":"health","regions":["US-Plains"],"eligible":"mental health"}
+{"f":"Quarry Workforce","cat":"workforce","regions":["US"],"eligible":"union partner required"}
+{"f":"River Tech","cat":"technology","regions":["Global"],"eligible":"open source required"}
+{"f":"Solace Refuge","cat":"humanitarian","regions":["MENA"],"eligible":"response"}
+{"f":"Tandem Trees","cat":"environment","regions":["US"],"eligible":"maintenance"}
+{"f":"Umber Heritage","cat":"culture","regions":["US-SE"],"eligible":"capital excluded"}
+{"f":"Verdant Agriculture","cat":"food","regions":["Global"],"eligible":"nonprofits"}
+{"f":"Willow Disability","cat":"disability","regions":["US"],"eligible":"accessible design"}
+{"f":"Zephyr Disaster","cat":"humanitarian","regions":["APAC"],"eligible":"preparedness and response"}
