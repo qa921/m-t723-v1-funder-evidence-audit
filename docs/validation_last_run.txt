@@ -1,0 +1,25 @@
+test_prairie_wellness_is_undetermined (test_matcher.TestAuthorityGate.test_prairie_wellness_is_undetermined) ... ok
+test_delta_multi_state_partner_is_condition_not_exclusion (test_matcher.TestConditions.test_delta_multi_state_partner_is_condition_not_exclusion) ... ok
+test_verdant_for_profit_is_conditional_not_excluded (test_matcher.TestConditions.test_verdant_for_profit_is_conditional_not_excluded) ... ok
+test_zephyr_response_requires_declared_emergency (test_matcher.TestConditions.test_zephyr_response_requires_declared_emergency) ... ok
+test_cedar_arts_schools_not_excluded (test_matcher.TestContradictions.test_cedar_arts_schools_not_excluded) ... ok
+test_ember_justice_advocacy_eligible (test_matcher.TestContradictions.test_ember_justice_advocacy_eligible) ... ok
+test_lumen_mobility_policy_not_excluded (test_matcher.TestContradictions.test_lumen_mobility_policy_not_excluded) ... ok
+test_mesa_water_fiscal_sponsor_not_required (test_matcher.TestContradictions.test_mesa_water_fiscal_sponsor_not_required) ... ok
+test_quarry_workforce_union_not_required (test_matcher.TestContradictions.test_quarry_workforce_union_not_required) ... ok
+test_umber_heritage_capital_not_excluded (test_matcher.TestContradictions.test_umber_heritage_capital_not_excluded) ... ok
+test_appendix_provenance_is_legible (test_matcher.TestProvenance.test_appendix_provenance_is_legible) ... ok
+test_every_rule_has_literal_provenance (test_matcher.TestProvenance.test_every_rule_has_literal_provenance) ... ok
+test_exclusions_have_literal_or_appendix_authority (test_matcher.TestProvenance.test_exclusions_have_literal_or_appendix_authority) ... ok
+test_generator_reproduces_committed_rules (test_matcher.TestProvenance.test_generator_reproduces_committed_rules) ... ok
+test_no_exclusion_is_corpus_sourced (test_matcher.TestProvenance.test_no_exclusion_is_corpus_sourced) ... ok
+test_aster_accepts_canada (test_matcher.TestRegions.test_aster_accepts_canada) ... ok
+test_aster_rejects_eu (test_matcher.TestRegions.test_aster_rejects_eu) ... ok
+test_harbor_inland_not_excluded (test_matcher.TestRegions.test_harbor_inland_not_excluded) ... ok
+test_solace_is_mena_only (test_matcher.TestRegions.test_solace_is_mena_only) ... ok
+test_authorized_examples (test_matcher.TestSyntheticExamples.test_authorized_examples) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 0.003s
+
+OK
