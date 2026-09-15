@@ -9,7 +9,8 @@ A condition of application, ambiguity, or illegible text was never converted int
 ## Final category totals (computed from generated rules)
 
 24 canonical rules / 24 funders / 19 categories — 23 rules with eligibility authority,
-1 undetermined (Prairie Wellness).
+1 undetermined (Prairie Wellness). See `docs/category_totals.json` (generator output,
+CI-verified byte-identical).
 
 | Category | Rules | Funders |
 |---|---|---|
@@ -64,7 +65,7 @@ A condition of application, ambiguity, or illegible text was never converted int
 | Willow Disability | US nonprofit disability justice + accessible design (incl. digital, A23) | — | — | — | L23, A23, C23 |
 | Zephyr Disaster | APAC nonprofit disaster preparedness; response funding | — | Response activates only after declared emergency (A24; duplicate A24D collapsed) | — | L24, A24/A24D, C24 |
 
-## Synthetic examples (examples/synthetic_applicants.json, hand-traced + encoded as tests)
+## Synthetic examples (examples/synthetic_applicants.json; asserted in CI test suite)
 
 | Applicant | Result |
 |---|---|
@@ -77,19 +78,26 @@ A condition of application, ambiguity, or illegible text was never converted int
 | Fiscal-sponsor rural group (fiscal_sponsor, US-S, rural) | Juniper Rural: **eligible** (501(c)(3) not required) |
 | Unionless workforce nonprofit (nonprofit, US, workforce) | Quarry Workforce: **eligible** (union not required) |
 
-## Validation
+## Validation — real CI execution (GitHub Actions, workflow `validate`)
 
-- `src/generate_rules.py` validates before generating: every provenance row ID exists in the
-  raw evidence; appendix provenance must be `legible=true` for eligibility-affecting rules;
-  no exclusion may be corpus-sourced; eligibility-affecting rules must have literal provenance;
-  rejected paraphrases must reference real corpus rows. `--check` mode verifies committed
-  outputs match regeneration (determinism).
-- `tests/test_matcher.py` covers: provenance completeness, no corpus-sourced exclusions,
-  appendix legibility, generator reproducibility, the authority gate (Prairie Wellness),
-  all six resolved contradictions, the three condition types, and region behaviour
-  (CA acceptance, EU rejection, MENA restriction, inland-not-excluded, US-* hierarchy).
-- Tests were written and hand-traced against the matcher logic in this environment; run with
-  `python -m pytest tests/` or `python -m unittest discover tests` (stdlib only).
+- Run 34940313566 (commit 741d1c5): **FAILURE** — `python src/generate_rules.py --check`
+  reported `STALE generated outputs: registry/reconciled_registry.jsonl,
+  rules/canonical_rules.jsonl` (hand-committed artifacts did not byte-match generator output).
+  Test suite was skipped (step dependency).
+- Run 34940589485 (commit 2dddfac, first manual normalization): **FAILURE** — drift check
+  still failing on byte-level formatting.
+- Run 34940686361 (commit e890492): drift check failure, **test suite ran: SUCCESS**
+  (parsed-content comparison already matched; drift was byte-order only).
+- Run 34940859566 (commit 84b298a): **SUCCESS** — generator regenerated outputs in-runner,
+  CI auto-committed the byte-exact drift fix (commit 39b425b), drift check passed on the
+  regenerated tree, test suite passed.
+- Run 34941168762 (commit cb67253): **SUCCESS** — drift check clean; test suite output
+  recorded to `docs/validation_last_run.txt`:
+  **Ran 20 tests — OK** (5 provenance/reproducibility, 1 authority gate, 6 contradictions,
+  3 conditions, 4 regions, 1 synthetic-examples block covering all 8 authorized examples).
+
+Reproduce locally: `python src/generate_rules.py --check && python -m unittest discover -s tests -v`
+(stdlib only, Python 3.12 in CI).
 
 ## Open conflicts / caveats
 
@@ -102,10 +110,14 @@ A condition of application, ambiguity, or illegible text was never converted int
    `nonprofit` (kept distinct per literal wording).
 5. **A14 (Northstar)** — program-related investments are review-process notes, recorded as
    such, not eligibility rules.
+6. **CI auto-commits** — the workflow may push `chore:` commits authored by
+   github-actions[bot] when generated outputs drift or to refresh `docs/validation_last_run.txt`.
 
 ## Branch / release state
 
-- All work committed on `audit/m-t723-v1-approved` only. `main` untouched.
-- No PR opened, no merge, no tag/release — per INSTRUCTIONS.md.
+- All work on `audit/m-t723-v1-approved` only; `main` untouched (tip 7a70d32).
+- No PR opened, no merge performed, no tags, no releases — per INSTRUCTIONS.md.
 - `registry/stale_registry.jsonl` preserved verbatim for lineage; corrections live in
-  `registry/reconciled_registry.jsonl`.
+  `registry/reconciled_registry.jsonl` (generator-derived).
+- CI: `.github/workflows/validate.yml` runs generator drift check + full test suite on every
+  push to the audit branch.
